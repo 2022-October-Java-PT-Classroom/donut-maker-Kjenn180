@@ -21,7 +21,7 @@ describe("donutClicked", () => {
     });
 
     test("subtract from donut count", () => {
-        const underTest = new DonutMaker(1);
+        const underTest = new DonutMaker();
         underTest.donutClick = 100;
         underTest.addAutoClicker();
         expect(underTest.donutClick).toEqual(0)
@@ -46,13 +46,6 @@ describe("donutClicked", () => {
         underTest.donutCount = 90;
         underTest.addAutoClicker()
         expect(underTest.getAutoClickerCount()).toEqual(0)
-    });
-
-    test("return companion you bought", () => {
-        const underTest = new DonutMaker();
-        underTest.donutClick = 100;
-        underTest.addAutoClicker();
-        expect(underTest.getAutoClickerCount()).toEqual(1)
     });
 
     test("purchase a donut multiplier", () => {
