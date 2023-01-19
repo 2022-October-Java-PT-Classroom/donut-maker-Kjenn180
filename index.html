@@ -2,12 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
+    <link rel="stylesheet" href=".github/css/style.css" />
+    <title>Fred the Baker Baking Company</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul>
+
+            <!-- onclick="test()" -->
+            <li><button class="au">About Us</button></li>
+            <li><button class="ds">The Dev</button></li>
+            <li><button><a href="https://orteil.dashnet.org/cookieclicker/"target="_blank">Inspiration</a></button></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        
+        <div class="hidden-texts-container">
+          <section class="about-us hidden-texts" hidden>
+            <h3>About Us</h3>
+            <p>
+              Welcome to Fred the Baker Baking Company donuts our motto is "We fry, bake and serve on a daily basis the most delicious and clever donuts in the world. 
+            </p>
+          </section>
+          <section class="dev hidden-texts" hidden>
+            <h3>The Developer</h3>
+            <p>
+              My name is Kadeen Jennings and I'm a Software Developer who enjoys coding and creating innovative things.
+            </p>
+            <div class="a-container">
+              <p>
+                <a href="https://Kjenn180.github.io/" target="_blank">Portfolio</a>
+              </p>
+              <p>
+                <a href="https://github.com/kjenn180" target="_blank">Github</a>
+              </p>
+            </div>
+          </section>
+          <section class="hidden-texts" hidden>
+            <h3>Inspiration</h3>
+            <p>This is a tribute to the original Cookie Clicker Game</p>
+            <button>
+              <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"
+                >Inspiration</a
+              >
+            </button>
+          </section>
+        </div>
+        <div class="content">
+          <nav class="sidebar">
+            <ul class="side-nav">
+              <button class="make-donut side-nav__item">
+                Click to Make Donuts!
+              </button>
+              <button class="ac-btn side-nav__item" disabled>
+                Buy AutoClicker!
+              </button>
+              <button class="m-btn side-nav__item" disabled>
+                Buy Multiplier!
+              </button>
+            </ul>
+          </nav>
+          <main class="main-view">
+            <div class="heading">
+              <h1><span>Fred the Baker</span> Baking Company</h1>
+            </div>
+            <div class="detail">
+              <div class="description">
+                <div class="desc-title">Donut Count :</div>
+                <div class="donut-count">0</div>
+                <div class="cost">
+                  <span>Per Click : </span>
+                  <div class="donut-value">1</div>
+                </div>
+                <hr />
+                <div class="desc-title">Number of Auto Clickers :</div>
+                <div class="ac-count">0</div>
+                <div class="cost">
+                  <span>Cost :</span>
+                  <div class="ac-cost">100</div>
+                </div>
+                <hr />
+                <div class="desc-title">Number of Donut Multipliers :</div>
+                <div class="m-count">0</div>
+                <div class="cost">
+                  <span>Cost : </span>
+                  <div class="m-cost">10</div>
+                </div>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="reset">Reset</button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="./donut-maker.js"></script>
+    <script src="./donut-maker-app.js"></script>
   </body>
+  <footer class="footer">
+    <small class="footer__copyright">&copy Kadeen Jennings, WCCI 2022</small>
+</footer>
 </html>
